@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FakeOutsource</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/assets/icons/time-bomb.png" type="image/x-icon">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            
+            <!-- logo and buttons div -->
+            <div class="logo-and-buttons">
+                <!-- Logo div -->
+                <div class="logo-div">
+                    <h1>FakeOutsource</h1>
+                </div>
+                <!-- Auth Buttons Div :* -->
+                <div class="auth-buttons">
+                    <button class="theme-toggle-btn">Theme</button>
+                    <button class="login-btn">Login</button>
+                    <button class="signup-btn">Sign Up</button>
+                </div>
+            </div>
+
+            
+            <!-- Desktop Nav div :) -->
+            <nav class="desktop-nav">
+                <a href="#home" onclick="navigateTo('home')" id="homeBtn">Home</a>
+                <a href="#about" onclick="navigateTo('about')" id="aboutBtn">About Us</a>
+                <a href="#services" onclick="navigateTo('services')" id="servicesBtn">Services</a>
+                <a href="#contact" onclick="navigateTo('contact')" id="contactBtn">Contact Us</a>
+            </nav>
+        </div>
+
+        <!-- Popup container thing-->
+        <div id="login-popup" class="login-popup">
+            <div class="login-popup-content">
+                <span class="close-popup" id="close-popup">&times;</span>
+                <h2>Login</h2>
+                <form id="login-form">
+                    <input type="email" id="login-email" class="login-email" placeholder="Email" required />
+                    <input type="password" id="login-password" class="login-password" placeholder="Password" required />
+                    <button type="submit" id="login-submit" class="login-submit">Login</button>
+                </form>
+                <p id="popup-bottom-text">
+            </div>
+        </div>
+    </header>
+    <header class="hamburger-menu">
+        <div class="hamburger-menu-div">
+            <button class="hamburger-button" id="hamburger-button">☰</button>
+        </div>
+    
+            <nav class="mobile-nav" id="mobile-nav">
+                <a href="#home" onclick="navigateTo('home')">Home</a>
+                <a href="#about" onclick="navigateTo('about')">About Us</a>
+                <a href="#services" onclick="navigateTo('services')">Services</a>
+                <a href="#contact" onclick="navigateTo('contact')">Contact Us</a>
+            </nav>
+
+    </header>
+    
+    
+
+
+    <main>
+        <!-- HOME SECTION  :)-->
+        <section class="home" id="home">
+            <div class="contianer">
+                <div class="row">
+                    <div class="col">
+                        <div class="details-container">
+                            <h3>Innovative IT Solutions</h3>
+                            <h1>Transformăm ideile tale în realitate prin outsourcing de top</h1>
+                            <div class="home-button-div">
+                                <button onclick="navigateTo('about')" class="learn-more-button">Learn More</button>
+                                <button onclick="navigateTo('contact')" class="contactButton">Contact Us</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION :)-->
+        <section class="about" id="about">
+            <div class="contianer">
+                <div class="row">
+                    <div class="col">
+                        <div class="details-container">
+                            <h1>About FakeOutsource</h1>
+                            <h3>"Suntem un lider global în soluții IT, oferind dezvoltare software personalizată, consultanță în tehnologie și inovare în afaceri. Cu decenii de experiență, transformăm industrii prin servicii excepționale și metodologii avansate."</h3>
+                            <button onclick="navigateTo('about')" class="aboutBtn">Discover More</button>
+                        </div>
+                        <div class="reviewsCarousel" id="reviewsCarousel">
+                            <div class="reviewsItem">
+                                <div class="reveiews-description">
+                                    <h3>Maria Sanchez - Product Manager</h3>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#f8fc06"></i>
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#f8fc06"></i>
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#f8fc06"></i>
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#f8fc06"></i>
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#ffffff"></i>
+                                    </div>
+                                    <p>"Great experience working with this team! They were skilled, responsive, and went the extra mile. Timely updates, attention to detail, and quality work. Highly recommend them!"</p>
+                                </div>
+                            </div>
+                            <div class="reviewsItem">
+                                <div class="reveiews-description">
+                                    <h3>Daniel Roberts - CTO</h3>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#f8fc06"></i>
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#f8fc06"></i>
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#f8fc06"></i>
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#f8fc06"></i>
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#f8fc06"></i>
+                                    </div>
+                                    <p>"This outsourcing company was a game changer. They integrated smoothly into our team and delivered creative, high-quality solutions on time. Highly reliable and professional."</p>
+                                </div>
+                            </div>
+                            <div class="reviewsItem">
+                                <div class="reveiews-description">
+                                    <h3>Ayesha Khan - Senior Software Engineer</h3>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#f8fc06"></i>
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#f8fc06"></i>
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#f8fc06"></i>
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#f8fc06"></i>
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#ffffff"></i>
+                                    </div>
+                                    <p>"We’ve worked with this firm for a year, and they consistently deliver high-quality code. Their developers are experts and always meet deadlines. Excellent communication and service."</p>
+                                </div>
+                            </div>
+                            <div class="reviewsItem">
+                                <div class="reveiews-description">
+                                    <h3>James Carter - Director of IT Operations</h3>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#f8fc06"></i>
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#f8fc06"></i>
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#f8fc06"></i>
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#f8fc06"></i>
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#ffffff"></i>
+                                    </div>
+                                    <p>"Outstanding experience. The team is proactive, detail-oriented, and always delivers on time. Their tailored solutions have improved our efficiency and reduced costs."</p>
+                                </div>
+                            </div>
+                            <div class="reviewsItem">
+                                <div class="reveiews-description">
+                                    <h3>Rebecca Lee - CEO</h3>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#f8fc06"></i>
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#f8fc06"></i>
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#f8fc06"></i>
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#f8fc06"></i>
+                                        <i class="fa-solid fa-star fa-2xl" style="color:#f8fc06"></i>
+                                    </div>
+                                    <p>"Choosing this company was one of our best decisions. They align with our values, provide expert support, and are passionate about our success. A fantastic partner."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviewsControls">
+                            <input type="radio" name="reviewsCarousel" class="reviewsCarousel-input" id="reviewsCarousel1">
+                            <label for="reviewsCarousel1"></label>
+                            
+                            <input type="radio" name="reviewsCarousel" class="reviewsCarousel-input" id="reviewsCarousel2">
+                            <label for="reviewsCarousel2"></label>
+                            
+                            <input type="radio" name="reviewsCarousel" class="reviewsCarousel-input" id="reviewsCarousel3" checked>
+                            <label for="reviewsCarousel3"></label>
+                            
+                            <input type="radio" name="reviewsCarousel" class="reviewsCarousel-input" id="reviewsCarousel4">
+                            <label for="reviewsCarousel4"></label>
+                            
+                            <input type="radio" name="reviewsCarousel" class="reviewsCarousel-input" id="reviewsCarousel5">
+                            <label for="reviewsCarousel5"></label>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION :)-->
+        <section class="services" id="services">
+            <div class="contianer">
+                <div class="row">
+                    <div class="col">
+                        <div class="details-container">
+                            <h1>Services</h1>
+                            <h3>"Our tech outsourcing company offers a wide range of services designed to drive innovation and efficiency. We provide expert solutions in software development, IT support, and digital transformation, ensuring that businesses can focus on their core operations while we handle their technological needs. "</h3>
+                        </div>
+                        <div class="servicesCarousel" id="servicesCarousel">
+                            <div class="servicesItem">
+                                <div class="service-description">
+                                    <h3>Dezvoltare Software</h3>
+                                    <i class="fa-solid fa-file-code" style="color: #ffffff;"></i>
+                                    <p>Crearea de aplicații și soluții personalizate pentru afaceri de toate dimensiunile, cu un focus pe performanță și scalabilitate.</p>
+                                    <button class="service-details-button" id="dezvoltare-soft-btn">Find out more</button>
+                                    <div class="more-info">
+                                        <div class="pricing-columns">
+                                            <div class="pricing-column">
+                                                <h4>Basic</h4>
+                                                <div class="list-div">
+                                                    <ul>
+                                                        <li>
+                                                            <p>Custom software development for small businesses</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Bug fixing and basic maintenance</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Basic UI/UX design</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Standard security features</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="https://buy.stripe.com/test_6oE9DP93GbRZaTSdQU"><button class="buy-button">Buy</button></a>
+                                            </div>
+                                            <div class="pricing-column">
+                                                <h4>Standard</h4>
+                                                <div class="list-div">
+                                                    <ul>
+                                                        <li>
+                                                            <p>All Basic benefits</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Integration with third-party tools</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Regular updates and feature improvements</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Enhanced security protocols</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="https://buy.stripe.com/test_8wMaHT1Be3ltgec9AF"><button class="buy-button">Buy</button></a>
+                                            </div>
+                                            <div class="pricing-column">
+                                                <h4>Premium</h4>
+                                                <div class="list-div">
+                                                    <ul>
+                                                        <li>
+                                                            <p>All Standard benefits</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Custom automation features</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Scalable architecture for future growth</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Dedicated support and project management</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Cross-platform compatibility (Windows, Mac, Linux)</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>In-depth performance analytics</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>High availability and fault tolerance</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Cloud infrastructure optimization</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="https://buy.stripe.com/test_7sIdU57ZC2hpe643ci"><button class="buy-button">Buy</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="servicesItem">
+                                <div class="service-description">
+                                    <h3>Suport Clienți</h3>
+                                    <i class="fa-solid fa-headset" style="color: #ffffff;"></i>
+                                    <p>Oferirea de suport continuu pentru utilizatori, răspunzând la întrebări și asigurându-ne că experienta lor este excelentă.</p>
+                                    <button class="service-details-button" id="suport-clienti-btn">Find out more</button>
+                                    <div class="more-info">
+                                        <div class="pricing-columns">
+                                            <div class="pricing-column">
+                                                <h4>Basic</h4>
+                                                <div class="list-div">
+                                                    <ul>
+                                                        <li>
+                                                            <p>Email support</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Phone support during business hours</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Response time within 48 hours</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Basic troubleshooting and FAQs</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="https://buy.stripe.com/test_28o03f2Fi8FN6DC28f"><button class="buy-button">Buy</button></a>
+                                            </div>
+                                            <div class="pricing-column">
+                                                <h4>Standard</h4>
+                                                <div class="list-div">
+                                                    <ul>
+                                                        <li>
+                                                            <p>All Basic benefits</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Live chat support</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Response time within 24 hours</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Support for multiple languages</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="https://buy.stripe.com/test_28oeY97ZC1dlaTSfZ6"><button class="buy-button">Buy</button></a>
+                                            </div>
+                                            <div class="pricing-column">
+                                                <h4>Premium</h4>
+                                                <div class="list-div">
+                                                    <ul>
+                                                        <li>
+                                                            <p>All Standard benefits</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>24/7 phone and live chat support</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Dedicated account manager</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Priority support for urgent issues</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Custom support channels (Slack, Discord, etc.)</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Full access to knowledge base and tutorials</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Monthly performance reports</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Post-resolution feedback and improvement suggestions</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="https://buy.stripe.com/test_8wM03feo0e074vu9AJ"><button class="buy-button">Buy</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="servicesItem">
+                                <div class="service-description">
+                                    <h3>Design Grafic</h3>
+                                    <i class="fa-solid fa-palette" style="color: #ffffff;"></i>
+                                    <p>Crearea de materiale vizuale atractive și eficiente, inclusiv logo-uri, pagini web și elemente de branding.</p>
+                                    <button class="service-details-button" id="design-grafic-btn">Find out more</button>
+                                    <div class="more-info">
+                                        <div class="pricing-columns">
+                                            <div class="pricing-column">
+                                                <h4>Basic</h4>
+                                                <div class="list-div">
+                                                    <ul>
+                                                        <li>
+                                                            <p>Custom logo design</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Basic branding elements (business cards, letterheads)</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>2 initial concepts to choose from</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>1 round of revisions</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="https://buy.stripe.com/test_cN23fr2FiaNV2nmfZ8"><button class="buy-button">Buy</button></a>
+                                            </div>
+                                            <div class="pricing-column">
+                                                <h4>Standard</h4>
+                                                <div class="list-div">
+                                                    <ul>
+                                                        <li>
+                                                            <p>All Basic benefits</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Full brand identity (logo, color palette, typography)</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Social media design templates (for Facebook, Instagram, etc.)</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>3 initial concepts to choose from</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="https://buy.stripe.com/test_7sI9DP3Jm09hfa8bIT"><button class="buy-button">Buy</button></a>
+                                            </div>
+                                            <div class="pricing-column">
+                                                <h4>Premium</h4>
+                                                <div class="list-div">
+                                                    <ul>
+                                                        <li>
+                                                            <p>All Standard benefits</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Packaging design for products</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Animated logo or banner</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Custom illustration and graphics</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>5 initial concepts to choose from</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Unlimited revisions</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Brand guideline document</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Consultation on brand positioning</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="https://buy.stripe.com/test_7sI4jv1Be7BJ5zy6oA"><button class="buy-button">Buy</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="servicesItem">
+                                <div class="service-description">
+                                    <h3>Dezvoltare Web</h3>
+                                    <i class="fa-solid fa-hexagon-nodes" style="color: #ffffff;"></i>
+                                    <p>Construirea de site-uri web responsive și interactive care îmbunătățesc experiența utilizatorilor și crește vizibilitatea afacerii.</p>
+                                    <button class="service-details-button" id="dezvoltare-web-btn">Find out more</button>
+                                    <div class="more-info">
+                                        <div class="pricing-columns">
+                                            <div class="pricing-column">
+                                                <h4>Basic</h4>
+                                                <div class="list-div">
+                                                    <ul>
+                                                        <li>
+                                                            <p>Responsive website design</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Basic SEO optimization</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Up to 5 pages (Home, About Us, Services, Contact, Blog)</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Basic content management system (CMS)</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="https://buy.stripe.com/test_00g6rD6Vyf4b9PO5kx"><button class="buy-button">Buy</button></a>
+                                            </div>
+                                            <div class="pricing-column">
+                                                <h4>Standard</h4>
+                                                <div class="list-div">
+                                                    <ul>
+                                                        <li>
+                                                            <p>All Basic benefits</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Custom web design tailored to your brand</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>E-commerce integration (up to 20 products)</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Social media integration</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="https://buy.stripe.com/test_bIY2bn93Ge074vu6oC"><button class="buy-button">Buy</button></a>
+                                            </div>
+                                            <div class="pricing-column">
+                                                <h4>Premium</h4>
+                                                <div class="list-div">
+                                                    <ul>
+                                                        <li>
+                                                            <p>All Standard benefits</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Multi-language website support</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Multi-language website support</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Full analytics and tracking integration</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Dedicated web hosting setup</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Advanced security features (SSL, firewall)</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Ongoing site updates and maintenance</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>24/7 technical support</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="https://buy.stripe.com/test_14kbLX7ZCe074vueV9"><button class="buy-button">Buy</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="servicesItem">
+                                <div class="service-description">
+                                    <h3>Marketing Digital</h3>
+                                    <i class="fa-solid fa-rectangle-ad" style="color: #ffffff;"></i>
+                                    <p>Strategii de marketing online pentru a ajuta afacerea să ajungă la publicul țintă prin SEO, reclame plătite și social media.</p>
+                                    <button class="service-details-button" id="marketing-digital-btn">Find out more</button>
+                                    <div class="more-info">
+                                        <div class="pricing-columns">
+                                            <div class="pricing-column">
+                                                <h4>Basic</h4>
+                                                <div class="list-div">
+                                                    <ul>
+                                                        <li>
+                                                            <p>Social media management for 2 platforms (Facebook, Instagram)</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Monthly performance report</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Basic ad campaign creation (Facebook Ads, Google Ads)</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Keyword research for SEO</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="https://buy.stripe.com/test_9AQ4jv4Nq2hpbXW28o"><button class="buy-button">Buy</button></a>
+                                            </div>
+                                            <div class="pricing-column">
+                                                <h4>Standard</h4>
+                                                <div class="list-div">
+                                                    <ul>
+                                                        <li>
+                                                            <p>All Basic benefits</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Content creation and scheduling for 4 platforms</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Weekly performance reports</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Retargeting ad campaigns</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Enhanced keyword research for better SEO</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="https://buy.stripe.com/test_3cs3fr93G2hp4vuaEV"><button class="buy-button">Buy</button></a>
+                                            </div>
+                                            <div class="pricing-column">
+                                                <h4>Premium</h4>
+                                                <div class="list-div">
+                                                    <ul>
+                                                        <li>
+                                                            <p>All Standard benefits</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Custom digital marketing strategy</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Full email marketing campaign (design, send, track)</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Influencer marketing integration</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Monthly content creation (blog posts, videos)</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Conversion rate optimization</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Dedicated account manager</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Advanced competitor analysis and market trends</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="https://buy.stripe.com/test_3cs7vH5RubRZ3rqeVc"><button class="buy-button">Buy</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="servicesControls">
+                            <input type="radio" name="servicesCarousel" class="servicesCarousel-input" id="servicesCarousel1">
+                            <label for="servicesCarousel1"></label>
+                            
+                            <input type="radio" name="servicesCarousel" class="servicesCarousel-input" id="servicesCarousel2">
+                            <label for="servicesCarousel2"></label>
+                            
+                            <input type="radio" name="servicesCarousel" class="servicesCarousel-input" id="servicesCarousel3" checked>
+                            <label for="servicesCarousel3"></label>
+                            
+                            <input type="radio" name="servicesCarousel" class="servicesCarousel-input" id="servicesCarousel4">
+                            <label for="servicesCarousel4"></label>
+                            
+                            <input type="radio" name="servicesCarousel" class="servicesCarousel-input" id="servicesCarousel5">
+                            <label for="servicesCarousel5"></label>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT US :)-->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <div class="row">
+                    <div class="col">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nume complet</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Adresa de email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mesaj</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Maps -->
+                    <div class="col">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100000.0!2d-74.005973!3d40.712776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a3fd1166f7f%3A0x103b6c25b456d3b8!2sNew%20York!5e0!3m2!1sen!2sus!4v1633601632015!5m2!1sen!2sus" 
+                            width="100%" 
+                            height="400" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- FOOTER :)-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="footer-links">
+                            <a href="#home">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#services">Services</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+            
+                        <div class="social-links">
+                            <a href="https://facebook.com" target="_blank">
+                                <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank">
+                                <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank">
+                                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                            </a>
+                        </div>
+            
+                        <div class="privacy-policy">
+                            <a href="#privacy-policy">Privacy Policy</a>
+                        </div>
+            
+
+                        <div class="copyright">
+                            &copy; 2024 FakeOutsource. All rights reserved.
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+                
+        </footer>
+    </main>
+
+    <script src="script.js" defer></script>
+    <script src="burger.js"></script>
+    <script src="https://kit.fontawesome.com/c139686304.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</body>
+</html>
